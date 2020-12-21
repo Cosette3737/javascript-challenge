@@ -40,17 +40,25 @@ function runEnter(){
     var filteredData = tableData.filter(tableData => tableData.state === stateValue);
     var filteredData = tableData.filter(tableData => tableData.country === countryValue);
     var filteredData = tableData.filter(tableData => tableData.shape === shapeValue);
-
+    console.log(filteredData);
     //clear table for next filter
     tbody.html("");
-    //console.log(filteredData);
+    
+    let allfilters= {
+     dateValue,
+     cityValue,
+     stateValue,
+     countryValue,
+     shapeValue
+   };
     //put filtered data into the table  
-    filteredData.forEach((rowData) => {
-
-      let row = tbody.append("tr");
-      Object.values(rowData).forEach((value) => {
-        let cell = row.append("td");
-        cell.text(value);
+  if (allfilters.item == "")
+    delete(allfilters.item);
+    allfilters.forEach((rowData) => {
+    let row = tbody.append("tr");
+    Object.values(rowData).forEach(value) => {
+    let cell = row.append("td");
+    cell.text(value);
       });
     });
 
