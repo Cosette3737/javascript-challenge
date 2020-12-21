@@ -22,18 +22,18 @@
 After receiving provided dataset, an HTML, Data, App and CSS page were created.  Within the App page, Arrow functions, D3 are used to allow the website to easily access the needed information with a button click and a specified date.  A function is created to call the specified information and then another function is utilized to display the information in the table embedded on the web page.  
 
 2. Task Two
-
+Multiple input tags are given in a dropdown menu to allow the user to search the data with various criteria. This task was completed with adding new coding in the app, CSS, and HTML page.  
 
 
 
 # Results
 
 ![Filtered Table PHOTO](https://raw.githubusercontent.com/Cosette3737/javascript-challenge/main/resulttable.JPG)
+![Filtered Table PHOTO](https://raw.githubusercontent.com/Cosette3737/javascript-challenge/main/filters.JPG)
+![Filtered Table PHOTO](https://raw.githubusercontent.com/Cosette3737/javascript-challenge/main/level2.JPG)
 
 
 
 
-
-# Limitations
 
 
