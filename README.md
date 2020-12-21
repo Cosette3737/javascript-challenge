@@ -10,6 +10,8 @@
     - HTML
     - JavaScript
     - CSS
+    - Data
+    - App
     
     
 
@@ -17,7 +19,7 @@
 # Process
 1. Task One
 
-After receiving provided dataset, an HTML and CSS page were created.  Within the CSS page, Arrow functions, D3 are used to allow the website to easily access the needed information with a button click and a specified date.  A function is created to call the specified information and then another function is utilized to display the information in the table embedded on the web page.  
+After receiving provided dataset, an HTML, Data, App and CSS page were created.  Within the App page, Arrow functions, D3 are used to allow the website to easily access the needed information with a button click and a specified date.  A function is created to call the specified information and then another function is utilized to display the information in the table embedded on the web page.  
 
 2. Task Two
 
