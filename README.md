@@ -1,6 +1,6 @@
 # Javascript Challenge
 
-![UFO PHOTO](https://storage.googleapis.com/kaggle-datasets-images/455/925/944efec6f9c143560a4a8f5ff8efbf59/dataset-cover.jpg)
+![UFO PHOTO](https://github.com/Cosette3737/javascript-challenge/blob/main/ufophoto.JPG)
 
 
 # Project Scope
@@ -26,7 +26,7 @@ Once loaded into the SQL database another notebook called analysis.ipynb was use
 
 # Results
 
-![Filtered Table PHOTO](https://storage.googleapis.com/kaggle-datasets-images/455/925/944efec6f9c143560a4a8f5ff8efbf59/dataset-cover.jpg)
+![Filtered Table PHOTO](https://raw.githubusercontent.com/Cosette3737/javascript-challenge/main/resulttable.JPG)
 
 
 
