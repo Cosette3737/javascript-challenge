@@ -5,7 +5,7 @@
 
 # Project Scope
 
-* For the scope of this task, data collected on UFO sightings is placed in an easy to use table that allows the user to filter the data and find specified dates and the information for each sighting.  This project used:
+* For the scope of this task, data collected on UFO sightings is placed in an easy-to-use table that allows the user to filter the data and find specified dates and the information for each sighting.  This project used:
     - Visual Studio Code
     - HTML
     - JavaScript
@@ -17,7 +17,7 @@
 # Process
 1. Task One
 
-After recieving provided dataset, an an HTML and CSS page were created.  Within the CSS page, Arrow functions, D3 are used to allow the website to easily access the needed information with a button click and a specified date.  A function is created to call the specified infomration and then another function is utilized to display the infomration in the table embedded on the web page.  
+After receiving provided dataset, an HTML and CSS page were created.  Within the CSS page, Arrow functions, D3 are used to allow the website to easily access the needed information with a button click and a specified date.  A function is created to call the specified information and then another function is utilized to display the information in the table embedded on the web page.  
 
 2. Task Two
 
