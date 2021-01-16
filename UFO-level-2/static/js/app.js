@@ -10,12 +10,8 @@ var tbody = d3.select("tbody");
 button.on("click", runEnter);
 form.on("submit", runEnter);
 clearButton.on("click", fillTable);
-
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-};
 function fillTable() {
-  tbody.html("");
+  
   tableData.forEach((rowData) => { 
     let row = tbody.append("tr");
        Object.values(rowData).forEach((value) => {
@@ -45,10 +41,10 @@ function runEnter(){
 
     //filter data
     var filteredData = tableData.filter(tableData => tableData.datetime === dateValue); 
-    var filteredData = tableData.filter(tableData => tableData.city === cityValue); 
-    var filteredData = tableData.filter(tableData => tableData.state === stateValue);
-    var filteredData = tableData.filter(tableData => tableData.country === countryValue);
-    var filteredData = tableData.filter(tableData => tableData.shape === shapeValue);
+    var cityData = tableData.filter(tableData => tableData.city === cityValue); 
+    var stateData = tableData.filter(tableData => tableData.state === stateValue);
+    var countryData = tableData.filter(tableData => tableData.country === countryValue);
+    var shapeData = tableData.filter(tableData => tableData.shape === shapeValue);
 
     //clear table for next filter
     tbody.html("");
@@ -61,6 +57,38 @@ function runEnter(){
         let cell = row.append("td");
         cell.text(value);
       });
-    });
-    }
+    })
+    cityData.forEach((rowData) => {
+
+      let row = tbody.append("tr");
+          Object.values(rowData).forEach((value) => {
+            let cell = row.append("td");
+            cell.text(value);
+          });
+        })
+    stateData.forEach((rowData) => {
+
+      let row = tbody.append("tr");
+          Object.values(rowData).forEach((value) => {
+              let cell = row.append("td");
+              cell.text(value);
+            });
+          })
+    countryData.forEach((rowData) => {
+
+      let row = tbody.append("tr");
+          Object.values(rowData).forEach((value) => {
+                let cell = row.append("td");
+                cell.text(value);
+              });
+            })
+    shapeData.forEach((rowData) => {
+
+      let row = tbody.append("tr");
+          Object.values(rowData).forEach((value) => {
+                  let cell = row.append("td");
+                  cell.text(value);
+                });
+              })
+            };
 fillTable();

@@ -32,46 +32,32 @@
             <div class="panel panel-default">
               <div class="panel-heading"></div>
               <div class="panel-body">
-                <div class="dropdown">
-                  <form id = "form-id"></form>
-                  <button id="clear-btn" type="button" class="btn btn-default">Clear Table</button>
-                  <button onclick="myFunction()" class="dropbtn">Search Options</button>
-                  <button id = "filter-btn" type="button">Filter Results</button>
-                  <div id="myDropdown" class="dropdown-content">
+                  <form id = "form-id">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
                       </li>
-                    </ul>
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
+                        <li class="filter list-group-item">
                         <label for="date">Enter a City</label>
                         <input class="form-control" id="city" type="text" placeholder="bonita">
                       </li>
-                    </ul>
-                    <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a State</label>
                         <input class="form-control" id="state" type="text" placeholder="ca">
                       </li>
-                    </ul>
-                    <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a country</label>
+                        <label for="date">Enter a Country</label>
                         <input class="form-control" id="country" type="text" placeholder="us">
                       </li>
-                    </ul>
-                    <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a shape</label>
+                        <label for="date">Enter a Shape</label>
                         <input class="form-control" id="shape" type="text" placeholder="circle">
                       </li>
                     </ul>
-                    
-                  </form>
-                  </div>
-            </div>
+                  <button id="clear-btn" type="button" class="btn btn-default">Clear Results</button>
+                  <button id = "filter-btn" type="button"class="btn btn-default">Filter Results</button>
+              </div>
           </aside>
         </div>
         <div class="col-md-10">
