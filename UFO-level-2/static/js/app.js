@@ -1,20 +1,29 @@
-// from data.js
 var tableData = data;
 
 // YOUR CODE HERE!
 // select the filter button/form/tablebody
 var button = d3.select("#filter-btn");
+var clearButton = d3.select("clear-btn")
 var form = d3.select("#form-control");
 var tbody = d3.select("tbody");
  //Create event handlers
 button.on("click", runEnter);
 form.on("submit", runEnter);
-
+clearButton.on("click", fillTable);
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-}
-
+};
+function fillTable() {
+  tbody.html("");
+  tableData.forEach((rowData) => { 
+    let row = tbody.append("tr");
+       Object.values(rowData).forEach((value) => {
+         let cell = row.append("td");
+         cell.text(value);
+           });
+         })
+       };
 
 
 //Complete event handler
@@ -40,26 +49,18 @@ function runEnter(){
     var filteredData = tableData.filter(tableData => tableData.state === stateValue);
     var filteredData = tableData.filter(tableData => tableData.country === countryValue);
     var filteredData = tableData.filter(tableData => tableData.shape === shapeValue);
-    console.log(filteredData);
+
     //clear table for next filter
     tbody.html("");
-    
-    let allfilters= {
-     dateValue,
-     cityValue,
-     stateValue,
-     countryValue,
-     shapeValue
-   };
+    //console.log(filteredData);
     //put filtered data into the table  
-  if (allfilters.item == "")
-    delete(allfilters.item);
-    allfilters.forEach((rowData) => {
-    let row = tbody.append("tr");
-    Object.values(rowData).forEach(value) => {
-    let cell = row.append("td");
-    cell.text(value);
+    filteredData.forEach((rowData) => {
+
+      let row = tbody.append("tr");
+      Object.values(rowData).forEach((value) => {
+        let cell = row.append("td");
+        cell.text(value);
       });
     });
-
-  };
+    }
+fillTable();

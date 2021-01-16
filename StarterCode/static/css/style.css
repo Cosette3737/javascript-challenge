@@ -102,14 +102,17 @@ select {
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
+  opacity: .4;
 }
 
 .hero h1 {
-  margin-top: 200px;
+  margin-top: 400px;
   font-size: 0.1rem;
-  color:rgb(12, 247, 247);
+  color:rgb(15, 15, 15);
   animation: title 1.2s forwards linear;
+  opacity: .9;
 }
+
 
 .hero p {
   font-size: 40px;
