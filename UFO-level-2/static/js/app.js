@@ -3,7 +3,7 @@ var tableData = data;
 // YOUR CODE HERE!
 // select the filter button/form/tablebody
 var button = d3.select("#filter-btn");
-var clearButton = d3.select("clear-btn")
+var clearButton = d3.select("#clear-btn")
 var form = d3.select("#form-control");
 var tbody = d3.select("tbody");
  //Create event handlers
@@ -11,7 +11,6 @@ button.on("click", runEnter);
 form.on("submit", runEnter);
 clearButton.on("click", fillTable);
 function fillTable() {
-  
   tableData.forEach((rowData) => { 
     let row = tbody.append("tr");
        Object.values(rowData).forEach((value) => {
